@@ -1,14 +1,14 @@
 /*
         Project: Apollo 21
-        Filename: kontrol.c
+        Filename: control.c
         Author: Ömer Furkan
         Contact: omer.furkan.uyanik1@gmail.com
         Date: 12 Kasım 2016 - 15:47
 
         x86 BUILD
-        gcc kontrol.c -z execstack -m32 -fno-stack-protector -o kontrol
+        gcc control.c -z execstack -m32 -fno-stack-protector -o control
         x64 BUILD
-        gcc kontrol.c -z execstack -fno-stack-protector -o kontrol
+        gcc control.c -z execstack -fno-stack-protector -o control
 
     Marsa gönderilecek aracı komuta eden işlemlerin bulunduğu kaynak dosyası
 */

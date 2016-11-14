@@ -1,14 +1,14 @@
 /*
         Project: Apollo 21
-        Filename: arac.c
+        Filename: vehicle.c
         Author: Ömer Furkan
         Contact: omer.furkan.uyanik1@gmail.com
         Date: 12 Kasım 2016 - 15:47
 
         x86 BUILD
-        gcc arac.c -z execstack -m32 -w -fno-stack-protector -o arac -lpthread
+        gcc vehicle.c -z execstack -m32 -w -fno-stack-protector -o vehicle -lpthread
         x64 BUILD
-        gcc arac.c -z execstack -w -fno-stack-protector -o arac -lpthread
+        gcc vehicle.c -z execstack -w -fno-stack-protector -o vehicle -lpthread
 
     Marsa gönderilecek aracın özelliklerini ve iletişimini sağlayacak işlemlerin
     bulunduğu kaynak dosyası.
