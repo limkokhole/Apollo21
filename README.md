@@ -3,7 +3,7 @@ Apollo 21 source code and documentation
 
 ## Build
 
-
+_iY
 If arch is x86 then
 ```sh
 $ gcc control.c -z execstack -m32 -fno-stack-protector -o control -w
@@ -36,7 +36,7 @@ If you want to see the control commands please use *YARDIM* command.
 
 #### Example
 
-```sh
+```
 Apollo 21 ile İletişim Sağlandı!
 Verebileceğiniz Komutları Görebilmek İçin YARDIM Anahtar Kelimesini Kullanınız!
 
@@ -69,7 +69,7 @@ ORNEK	Apollo 21'in Son Karşılaştığı 3 Farklı Yüzey Birimini Gösterir
  This command, collect the floor samples.
 
 
- ## Problems And Solutions
+## Problems And Solutions
 
 #### Hata! Bind Başarısız!
 
