@@ -67,3 +67,20 @@ ORNEK	Apollo 21'in Son Karşılaştığı 3 Farklı Yüzey Birimini Gösterir
  
  - **ORNEK**
  This command, collect the floor samples.
+
+
+ ## Problems And Solutions
+
+#### Hata! Bind Başarısız!
+
+This problem is caused by socket.
+
+```sh
+$ ps aux | grep control
+xt0xid     3270  0.0  0.0   4336   656 pts/5    T    20:43   0:00 ./control
+``` 
+
+```sh
+$ kill -9 3270
+[1]+  Killed     ./control
+``` 

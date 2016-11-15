@@ -140,7 +140,9 @@ int main(int argc, char *argv[])
                     scanf("%d", &_iXX);
                     printf("Y Koordinatını Giriniz: ");
                     scanf("%d", &_iYY);
-                    sprintf(_cSendData, "%d %d", _iXX, _iYY);
+                    sprintf(_cSendData, "%d", _iXX);
+                    write(_iConnFD, _cSendData, sizeof(_cSendData));
+                    sprintf(_cSendData, "%d", _iYY);
                     write(_iConnFD, _cSendData, sizeof(_cSendData));
                     _iCheck = recv(_iConnFD, _cReceiveData, sizeof(_cReceiveData), 0x0);
                     if(_iCheck < 0x0)
@@ -163,8 +165,10 @@ int main(int argc, char *argv[])
                     }
                     else
                     {
-                        int _iX = _cReceiveData[0x0] - '0';
-                        int _iY = _cReceiveData[0x2] - '0';
+                        int _iX = atoi(_cReceiveData);
+                        int _iY;
+                        _iCheck = recv(_iConnFD, _cReceiveData, sizeof(_cReceiveData), 0x0);
+                        _iY = atoi(_cReceiveData);
                         printf("Apollo 21'in Güncel Koordinatları\nX: %d Y: %d\n", _iX, _iY);
                     }
                 }
